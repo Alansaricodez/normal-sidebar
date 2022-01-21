@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="sidebar_nav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">projects</a>
+        <a href="#">Gallery</a>
+        <a href="#">Contact me</a>
+    </div>
+    <span onclick="openNav()"><img src="https://cdn4.iconfinder.com/data/icons/wirecons-free-vector-icons/32/menu-alt-512.png" width="35px" style="padding-top: 20px; padding-left: 17px;"></span>
+
+    <main id="main"></main>
+
+
+
+
+
+    <script>
+        /* Set the width of the side navigation to 250px */
+        function openNav() {
+            document.getElementById("sidebar_nav").style.width = "270px";
+        }
+        /* Set the width of the side navigation to 0 */
+        function closeNav() {
+            document.getElementById("sidebar_nav").style.width = "0";
+        }
+    </script>
+
+</html>
